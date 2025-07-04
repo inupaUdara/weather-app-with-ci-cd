@@ -41,6 +41,7 @@ data "google_client_config" "default" {
 resource "google_project_service" "enable_api" {
   project = var.project  # Add this line
   for_each = toset([
+    "serviceusage.googleapis.com",
     "logging.googleapis.com",
     "artifactregistry.googleapis.com",
     "run.googleapis.com",

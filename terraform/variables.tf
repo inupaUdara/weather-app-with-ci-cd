@@ -1,5 +1,6 @@
 variable "project" {
   description = "The GCP project ID"
+  default     = "gen-lang-client-0868508419"
   type        = string
 }
 
